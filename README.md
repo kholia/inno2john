@@ -1,3 +1,35 @@
+# Usage
+
+Update: This was last updated and tested on 15-Jun-2023.
+
+On Ubuntu, install the following packages,
+
+```
+sudo aptitude install libswitch-perl libdatetime-perl \
+   libtext-glob-perl libdata-hexdumper-perl \
+   libdata-printer-perl libcompress-raw-lzma-perl \
+   libio-stringy-perl libdigest-crc-perl -y \
+   libcrypt-rc4-perl
+```
+
+On Fedora, install the following packages,
+
+```
+sudo dnf install perl-Data-Printer perl-Switch \
+   perl-DateTime perl-Compress-Raw-Lzma \
+   perl-Digest-CRC
+```
+
+Get the "hash" to crack,
+
+```
+./inno2john.pl samples/Output/setup.exe > hash
+```
+
+Give ``hash`` to JtR.
+
+It seems that, ``samples/hot-hash`` is the hottest thing on the internet today!
+
 # uninno
 
 ## Introduction
